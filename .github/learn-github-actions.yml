@@ -11,3 +11,5 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: echo "Hello TestBash"
+      - working-directory: ./src/webapp/api
+        run: npm run test
